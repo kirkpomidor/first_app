@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import { Button } from "@nextui-org/react";
 import { useRouter } from 'next/router';
 
-const server_link = "http://192.168.0.130:3000/upload_link/"; // work
-// const server_link = "http://localhost:3000/upload_link/" // cafe
+// const server_link = "http://192.168.0.130:3000/upload_link/"; // work
+const server_link = "http://localhost:3000/upload_link/MEDANCO_zjd34jh78gl_" // cafe
 
 const FileUploadButton = () => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const FileUploadButton = () => {
       // headers.append('Content-Type', 'multipart/form-data');
 
     console.log(file)
-    return fetch(server_link, {
+    return fetch(server_link + "myid", {
       method: 'POST',
       body: formData,
       //headers: headers
