@@ -3,7 +3,8 @@ import { Link } from "@nextui-org/react";
 
 // const server_address = "http://192.168.1.68:3000/"; // home
 // const server_address = "http://192.168.0.130:3000/"; // work
-const server_address = "http://localhost:3000/"; // local
+// const server_address = "http://localhost:3000/"; // local
+const server_address = "http://45.87.141.110:3000/" // cafe"
 // const server_address = "http://localhost:3000/"; // cafe
 // const server_address = "http://100.101.160.155";
 

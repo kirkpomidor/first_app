@@ -3,7 +3,8 @@ import { Button } from "@nextui-org/react";
 import { useRouter } from 'next/router';
 
 // const server_link = "http://192.168.0.130:3000/upload_link/"; // work
-const server_link = "http://localhost:3000/upload_link/MEDANCO_zjd34jh78gl_" // cafe
+// const server_link = "http://localhost:3000/upload_link/MEDANCO_zjd34jh78gl_" // cafe
+const server_link = "http://45.87.141.110:3000/upload_link/MEDANCO_zjd34jh78gl_" // cafe
 
 const FileUploadButton = () => {
   const router = useRouter();
