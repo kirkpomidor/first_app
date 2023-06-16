@@ -23,7 +23,7 @@ const FileUploadButton = () => {
       // headers.append('Content-Type', 'multipart/form-data');
 
     console.log(file)
-    return fetch(server_link + "myid", {
+    return fetch(server_link + "myid" + Math.floor(Math.random()*1000), {
       method: 'POST',
       body: formData,
       //headers: headers
