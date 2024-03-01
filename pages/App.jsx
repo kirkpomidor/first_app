@@ -4,7 +4,7 @@ import { Link } from "@nextui-org/react";
 // const server_address = "http://192.168.1.68:3000/"; // home
 // const server_address = "http://192.168.0.130:3000/"; // work
 // const server_address = "http://localhost:3000/"; // local
-const server_address = "http://45.87.141.110:3000/" // cafe"
+const server_address = "https://www.medanco.ru/" // cafe"
 // const server_address = "http://localhost:3000/"; // cafe
 // const server_address = "http://100.101.160.155";
 
@@ -15,9 +15,12 @@ export default function App() {
             signal,
         });
         const json = await res.json();
+        const totjs = json.filter(function(el, index) {
+            return index >= json.length - 10;
+        });
         console.log(json);
         return {
-            items: json,
+            items: totjs,
         };
     }
     async function sort({ items, sortDescriptor }) {
